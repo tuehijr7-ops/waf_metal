@@ -16,14 +16,23 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const item = btn.closest('.nav-item');
       const wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.nav-item.has-dropdown.open').forEach((el) => el.classList.remove('open'));
-      if (!wasOpen) item.classList.add('open');
+      closeDropdowns();
+      if (!wasOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
     });
   });
+  function closeDropdowns() {
+    document.querySelectorAll('.nav-item.has-dropdown.open').forEach((el) => {
+      el.classList.remove('open');
+      el.querySelector('.drop-btn').setAttribute('aria-expanded', 'false');
+    });
+  }
   document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav-item.has-dropdown')) {
-      document.querySelectorAll('.nav-item.has-dropdown.open').forEach((el) => el.classList.remove('open'));
-    }
+    if (!e.target.closest('.nav-item.has-dropdown')) closeDropdowns();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    closeDropdowns();
+    if (navLinks && navLinks.classList.contains('is-open')) burger.click();
   });
 
   // Close mobile menu when a plain link is clicked
