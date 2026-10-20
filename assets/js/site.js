@@ -79,7 +79,7 @@
       tl.from(words, { yPercent: 118, duration: 1.15, stagger: .07 }, 0)
         .fromTo('.crumbs,.hero .eyebrow', { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: .8 }, .05)
         .fromTo('.hero .lead,.phero .lead', { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: .9 }, .55)
-        .fromTo('.hero-actions', { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: .9 }, .7)
+        .fromTo('.hero .hero-actions,.phero .hero-actions', { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: .9 }, .7)
         .fromTo('.hero-points', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: .8 }, .85)
         .fromTo('.hero-visual', { opacity: 0, clipPath: 'inset(0 0 100% 0 round 16px)', y: 30 }, { opacity: 1, clipPath: 'inset(0 0 0% 0 round 16px)', y: 0, duration: 1.3, ease: 'power3.inOut', clearProps: 'clipPath' }, .35)
         .fromTo('.stats', { opacity: 0 }, { opacity: 1, duration: .9 }, 1.1);

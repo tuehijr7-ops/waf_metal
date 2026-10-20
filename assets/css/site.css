@@ -280,7 +280,7 @@ form.quote-form{ display:grid; grid-template-columns:1fr 1fr; gap:18px; } .quote
 
 /* ---------- motion defaults (GSAP drives the rest) ---------- */
 .js [data-r]{ opacity:0; transform:translateY(34px); transition:none !important; } /* GSAP drives it; a CSS transition here would fight the tween */
-.js .hero-visual,.js .stats,.js .hero .eyebrow,.js .hero .lead,.js .hero-actions,.js .hero-points,.js .phero .lead,.js .crumbs{ opacity:0; }
+.js .hero-visual,.js .stats,.js .hero .eyebrow,.js .hero .lead,.js .hero .hero-actions,.js .phero .hero-actions,.js .hero-points,.js .phero .lead,.js .crumbs{ opacity:0; }
 @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } *{ transition-duration:.01ms !important; } }
 
 /* gradient text survives the word-by-word split: the gradient moves onto each word */
