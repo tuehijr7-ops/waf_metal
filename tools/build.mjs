@@ -286,7 +286,7 @@ page({
   </div>
 </section>
 
-<section class="sec-dark" style="padding-block:clamp(40px,6vw,80px);overflow:hidden" aria-label="Matériaux travaillés">
+<section class="sec-dark" style="padding-block:clamp(26px,3.6vw,52px);overflow:hidden" aria-label="Matériaux travaillés">
   <div class="mq mq-big" aria-hidden="true"><div class="mq-track">${[0, 1].map(() => `<div class="mq-group"><span>Fonte</span><span class="dot">●</span><span>Bronze</span><span class="dot">●</span><span>Aluminium</span><span class="dot">●</span><span>Acier</span><span class="dot">●</span></div>`).join('')}</div></div>
 </section>
 

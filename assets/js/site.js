@@ -105,11 +105,18 @@
     /* infinite marquees */
     $$('.mq').forEach((m, i) => { const t = $('.mq-track', m); gsap.fromTo(t, { xPercent: i % 2 ? -50 : 0 }, { xPercent: i % 2 ? 0 : -50, ease: 'none', duration: m.classList.contains('mq-big') ? 34 : 46, repeat: -1 }); });
 
-    /* process line draws itself while scrolling */
-    const line = $('.steps .line');
+    /* process: the line traces itself and each step lights up as it is reached */
+    const line = $('.steps .line'), items = $$('.step');
     if (line) {
-      gsap.matchMedia().add('(min-width: 901px)', () => { gsap.fromTo(line, { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { trigger: '.steps', start: 'top 75%', end: 'bottom 60%', scrub: .4 } }); });
-      gsap.matchMedia().add('(max-width: 900px)', () => { gsap.fromTo(line, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.steps', start: 'top 70%', end: 'bottom 60%', scrub: .4 } }); });
+      gsap.matchMedia().add('(min-width: 901px)', () => { // time-based, so it is visible even though the section is short on a laptop screen
+        const tl = gsap.timeline({ scrollTrigger: { trigger: '.steps', start: 'top 85%', once: true } });
+        tl.fromTo(line, { scaleX: 0 }, { scaleX: 1, duration: 1.7, ease: 'power2.inOut' }, 0);
+        items.forEach((s, i) => tl.call(() => s.classList.add('on'), null, i * .5));
+      });
+      gsap.matchMedia().add('(max-width: 900px)', () => { // tall and stacked on phones: follow the scroll
+        gsap.fromTo(line, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.steps', start: 'top 70%', end: 'bottom 60%', scrub: .4 } });
+        items.forEach((s) => ScrollTrigger.create({ trigger: s, start: 'top 75%', once: true, onEnter: () => s.classList.add('on') }));
+      });
     }
 
     /* the 7 activities: vertical scroll drives a horizontal slide (desktop only; phones swipe) */
