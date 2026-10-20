@@ -2,240 +2,165 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WAF-METAL — Fonderie, Chaudronnerie &amp; Mécanique générale | Abidjan</title>
-<meta name="description" content="WAF-METAL (West Africa Foundry and Metallurgy) conçoit, usine et fond des pièces industrielles sur mesure à Abidjan : fonderie, chaudronnerie, mécanique générale, pompes, presses, wagonnets.">
-<meta name="theme-color" content="#f7f5f2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WAF-METAL — Fonderie, chaudronnerie et mécanique générale à Abidjan</title>
+<meta name="description" content="WAF-METAL conçoit, fond, soude et usine vos pièces industrielles sur dessin ou modèle à Abidjan : fonderie, chaudronnerie, mécanique générale, maintenance sur site.">
+<meta name="theme-color" content="#0f1215">
 <link rel="icon" href="images/logo.png">
-<script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<a class="skip-link" href="#main">Aller au contenu</a>
-
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="logo">
-      <span class="logo-badge"><img src="images/logo.png" width="436" height="173" alt="WAF-METAL — West Africa Foundry and Metallurgy"></span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="hdr">
+  <div class="wrap">
+    <a href="index.html" class="logo-card" aria-label="WAF-METAL, accueil"><img src="images/logo.png" width="436" height="173" alt="WAF-METAL — West Africa Foundry and Metallurgy"></a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i></button>
+    <ul class="nav" id="nav">
+      <li><a href="index.html" aria-current="page">Accueil</a></li>
       <li><a href="presentation.html">Présentation</a></li>
-      <li class="nav-item has-dropdown">
-        <button class="drop-btn" type="button" aria-expanded="false">Activités
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="dropdown">
-          <a href="atelier.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.14.36.2.75.2 1.15V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>Atelier d’usinage</a>
-          <a href="chaudiere.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v6a4 4 0 0 1-4 0V4"/><path d="M8 4h6"/><path d="M9 10v9a3 3 0 0 0 6 0v-9"/></svg></span>Chaudières</a>
-          <a href="chaudron.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>Chaudronnerie</a>
-          <a href="fonderie.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 3 4 4.5 4 8a4 4 0 0 1-8 0c0-1 .3-1.8.8-2.6.4.9 1.2 1.6 1.2.6 0-1.5-1.5-2.5-1.5-4.5 0-1 .8-1.9 1.5-1.5-.5 1 .5 1.5 2 0z"/><path d="M8.5 14.5a3.5 3.5 0 0 0 7 0"/></svg></span>Fonderie</a>
-          <a href="pompe.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></span>Pompes</a>
-          <a href="presse.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v5"/><path d="M12 20v-5"/><rect x="5" y="9" width="14" height="6" rx="1"/></svg></span>Presses</a>
-          <a href="wagon.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="8" rx="1"/><circle cx="7.5" cy="18.5" r="1.5"/><circle cx="16.5" cy="18.5" r="1.5"/></svg></span>Wagonnets</a>
-        </div>
+      <li class="has-dd">
+        <button class="dd-btn" type="button" aria-expanded="false">Activités <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="dd"><a href="atelier.html"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9H21a2 2 0 0 1 0 4h-1.6z"/></svg>Atelier d’usinage</a><a href="chaudiere.html"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4v6a4 4 0 0 1-4 0V4"/><path d="M8 4h6"/><path d="M9 10v9a3 3 0 0 0 6 0v-9"/></svg>Chaudières</a><a href="chaudron.html"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg>Chaudronnerie</a><a href="fonderie.html"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c1.5 3 4 4.5 4 8a4 4 0 0 1-8 0c0-1 .3-1.8.8-2.6.4.9 1.2 1.6 1.2.6 0-1.5-1.5-2.5-1.5-4.5 0-1 .8-1.9 1.5-1.5-.5 1 .5 1.5 2 0z"/><path d="M8.5 14.5a3.5 3.5 0 0 0 7 0"/></svg>Fonderie</a><a href="pompe.html"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>Pompes</a><a href="presse.html"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v5"/><path d="M12 20v-5"/><rect x="5" y="9" width="14" height="6" rx="1"/></svg>Presses</a><a href="wagon.html"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="8" rx="1"/><circle cx="7.5" cy="18.5" r="1.5"/><circle cx="16.5" cy="18.5" r="1.5"/></svg>Wagonnets</a></div>
       </li>
       <li><a href="ref.html">Références</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a class="btn btn-fire btn-sm" href="contact.html#devis">Demander un devis <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
     </ul>
-    <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
-
 <main id="main">
-
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="reveal is-visible">
-        <p class="eyebrow">Fonderie · Chaudronnerie · Mécanique générale</p>
-        <h1>Des pièces industrielles <span class="accent">façonnées pour durer</span></h1>
-        <p class="lead">Depuis la zone industrielle de Yopougon, WAF-METAL conçoit, usine et fond des pièces mécaniques sur mesure — en fonte, bronze, aluminium et acier — pour l’agro-industrie et l’industrie lourde en Côte d’Ivoire et en Afrique de l’Ouest.</p>
-        <div class="hero-actions">
-          <a href="#activites" class="btn btn-primary">
-            Découvrir nos activités
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="contact.html" class="btn btn-ghost">Demander un devis</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><b>3</b><span>Pôles industriels</span></div>
-          <div class="stat"><b>40+</b><span>Entreprises clientes</span></div>
-          <div class="stat"><b>7</b><span>Domaines d’expertise</span></div>
-        </div>
-      </div>
-      <div class="hero-media reveal is-visible">
-        <div class="frame">
-          <img src="images/accueil.jpg" width="445" height="483" alt="Fonderie, usinage et chaudronnerie WAF-METAL" loading="eager">
-        </div>
-        <div class="badge">
-          <span class="ic">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9H21a2 2 0 0 1 0 4h-1.6z"/></svg>
-          </span>
-          <span><strong>Ingénierie sur mesure</strong><span>Pièces réalisées sur dessin ou modèle</span></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-head center reveal">
-        <p class="eyebrow" style="justify-content:center">Notre savoir-faire</p>
-        <h2>Trois pôles, une seule exigence de qualité</h2>
-      </div>
-      <div class="pillars">
-        <div class="pillar reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 3 4 4.5 4 8a4 4 0 0 1-8 0c0-1 .3-1.8.8-2.6.4.9 1.2 1.6 1.2.6 0-1.5-1.5-2.5-1.5-4.5 0-1 .8-1.9 1.5-1.5-.5 1 .5 1.5 2 0z"/><path d="M8.5 14.5a3.5 3.5 0 0 0 7 0"/></svg></span>
-          <h3>La Fonderie</h3>
-          <p>Fabrication de pièces moulées par fusion — fonte, bronze, aluminium, acier et autres métaux, coulées et pièces de moulage sur mesure.</p>
-        </div>
-        <div class="pillar reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
-          <h3>La Chaudronnerie</h3>
-          <p>Fabrication de pièces et assemblages métalliques : structures soudées, treuils, turbines et éléments de chaudronnerie lourde.</p>
-        </div>
-        <div class="pillar reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9H21a2 2 0 0 1 0 4h-1.6z"/></svg></span>
-          <h3>La Mécanique générale</h3>
-          <p>Usinage et rectification de pièces mécaniques de précision, réalisées sur dessin ou modèle, pour tous types d’équipements industriels.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="activites" style="background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-    <div class="container">
-      <div class="section-head center reveal">
-        <p class="eyebrow" style="justify-content:center">Nos activités</p>
-        <h2>Sept domaines d’expertise industrielle</h2>
-      </div>
-      <div class="activities-grid">
-
-        <a href="atelier.html" class="activity-card reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9H21a2 2 0 0 1 0 4h-1.6z"/></svg></span>
-          <h3>Atelier d’usinage</h3>
-          <p>Pignons, axes, coussinets, crémaillères, roues dentées : pièces mécaniques sur dessin ou modèle.</p>
-          <span class="go">Voir l’activité <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="chaudiere.html" class="activity-card reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v6a4 4 0 0 1-4 0V4"/><path d="M8 4h6"/><path d="M9 10v9a3 3 0 0 0 6 0v-9"/></svg></span>
-          <h3>Chaudières</h3>
-          <p>Grilles, foyers, cendriers, tuyères et pièces de maintenance pour installations de chauffe.</p>
-          <span class="go">Voir l’activité <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="chaudron.html" class="activity-card reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
-          <h3>Chaudronnerie</h3>
-          <p>Turbines en mécano-soudé, treuils, carters rotatifs et ensembles métalliques assemblés.</p>
-          <span class="go">Voir l’activité <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="fonderie.html" class="activity-card reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 3 4 4.5 4 8a4 4 0 0 1-8 0c0-1 .3-1.8.8-2.6.4.9 1.2 1.6 1.2.6 0-1.5-1.5-2.5-1.5-4.5 0-1 .8-1.9 1.5-1.5-.5 1 .5 1.5 2 0z"/><path d="M8.5 14.5a3.5 3.5 0 0 0 7 0"/></svg></span>
-          <h3>Fonderie</h3>
-          <p>Grilles et pièces de moulage en fonte, bronze, aluminium, acier et autres métaux.</p>
-          <span class="go">Voir l’activité <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="pompe.html" class="activity-card reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></span>
-          <h3>Pompes</h3>
-          <p>Corps, impulseurs, turbines, diffuseurs, arbres, bagues et presse-étoupe.</p>
-          <span class="go">Voir l’activité <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="presse.html" class="activity-card reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v5"/><path d="M12 20v-5"/><rect x="5" y="9" width="14" height="6" rx="1"/></svg></span>
-          <h3>Presses</h3>
-          <p>Vis d’alimentation, vis de pression P9, cames, roues et vis sans fin, boîtiers de roulement.</p>
-          <span class="go">Voir l’activité <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="wagon.html" class="activity-card reveal">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="8" rx="1"/><circle cx="7.5" cy="18.5" r="1.5"/><circle cx="16.5" cy="18.5" r="1.5"/></svg></span>
-          <h3>Wagonnets</h3>
-          <p>Roues, paliers, bagues, arbres et pièces de rechange pour wagonnets industriels.</p>
-          <span class="go">Voir l’activité <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="ref.html" class="activity-card reveal" style="display:flex; flex-direction:column; justify-content:center; align-items:flex-start; background:var(--grad-fire); border:none;">
-          <h3 style="color:#fff;">Nos références</h3>
-          <p style="color:rgba(255,255,255,.85);">Plus de 40 entreprises industrielles nous font confiance en Côte d’Ivoire et en Afrique de l’Ouest.</p>
-          <span class="go" style="color:#fff;">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="quote-block reveal">
-        <p>« La mécanique, c’est d’abord la rigueur. Et si on l’introduisait dans nos entreprises ! »</p>
-        <cite>— WAF-METAL, West Africa Foundry and Metallurgy</cite>
-      </div>
-      <div class="strip reveal">
-        <h3>Un besoin de pièce sur mesure, une panne à dépanner ?</h3>
-        <a href="contact.html" class="btn btn-ghost">
-          Nous contacter
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-about">
-      <a href="index.html" class="logo" style="margin-bottom:16px;">
-        <span class="logo-badge"><img src="images/logo.png" width="436" height="173" alt="WAF-METAL — West Africa Foundry and Metallurgy"></span>
-      </a>
-      <p>Fonderie, chaudronnerie et mécanique générale. Pièces industrielles sur mesure depuis la zone industrielle de Yopougon, Abidjan.</p>
-    </div>
+<section class="hero">
+  <canvas class="embers" data-n="60" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
     <div>
-      <h4>NAVIGATION</h4>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="presentation.html">Présentation</a></li>
-        <li><a href="ref.html">Nos références</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <p class="eyebrow">Fonderie · Chaudronnerie · Mécanique générale</p>
+      <h1 class="display">Des pièces industrielles <em class="grad-text">façonnées pour durer</em></h1>
+      <p class="lead">Depuis Yopougon, à Abidjan, WAF-METAL fond, soude et usine vos pièces sur dessin ou modèle, et intervient sur site pour la maintenance de vos chaudières, pompes et réducteurs.</p>
+      <div class="hero-actions">
+        <a class="btn btn-fire" href="contact.html#devis">Demander un devis <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#activites">Voir nos activités</a>
+      </div>
+      <ul class="hero-points">
+        <li><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Pièces sur dessin ou modèle</li><li><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Équipe technique mobile sur site</li><li><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Délais de livraison respectés</li>
       </ul>
     </div>
-    <div>
-      <h4>ACTIVITÉS</h4>
-      <ul>
-        <li><a href="atelier.html">Atelier d’usinage</a></li>
-        <li><a href="chaudiere.html">Chaudières</a></li>
-        <li><a href="chaudron.html">Chaudronnerie</a></li>
-        <li><a href="fonderie.html">Fonderie</a></li>
-        <li><a href="pompe.html">Pompes</a></li>
-        <li><a href="presse.html">Presses</a></li>
-        <li><a href="wagon.html">Wagonnets</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>CONTACT</h4>
-      <ul>
-        <li><a href="contact.html">Zone industrielle de Yopougon<br>26 BP 1404 Abidjan 26</a></li>
-        <li><a href="tel:+22523520310">(225) 23 52 03 10</a></li>
-        <li><a href="mailto:wafmetal@aisgroupafrica.com">wafmetal@aisgroupafrica.com</a></li>
-      </ul>
+    <div class="hero-visual">
+      <div class="frame"><img src="images/accueil.jpg" width="445" height="483" alt="Fonderie, soudure et usinage dans les ateliers WAF-METAL" fetchpriority="high"></div>
+      <div class="tag-card"><span class="ic-sq"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9H21a2 2 0 0 1 0 4h-1.6z"/></svg></span><div><b>Sur dessin ou modèle</b><span>Fonte, bronze, aluminium, acier</span></div></div>
     </div>
   </div>
-  <div class="container footer-bottom">
-    <span>© 2026 WAF-METAL — Tous droits réservés.</span>
-    <span>Zone industrielle de Yopougon, Abidjan, Côte d’Ivoire</span>
+  <div class="stats"><div class="wrap">
+    <div class="stat"><b data-count="40" data-suffix="+">40+</b><span>entreprises clientes</span></div>
+    <div class="stat"><b data-count="4">4</b><span>pays en Afrique de l’Ouest</span></div>
+    <div class="stat"><b data-count="7">7</b><span>domaines d’expertise</span></div>
+  </div></div>
+</section>
+
+<section class="sec" aria-labelledby="t-clients">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Ils nous font confiance</p><h2 class="h2" id="t-clients" data-split>Des industriels de tous les secteurs</h2>
+      <p data-r class="lead">Scieries, huileries, caoutchouc, agro-industrie : nos clients comptent sur nous pour garder leurs machines en marche.</p></div>
+    <div class="tiles">
+      <a class="tile" href="ref.html#scieries" data-r><b data-count="12">12</b><h3>Scieries</h3><p>références en Côte d’Ivoire</p></a><a class="tile" href="ref.html#huileries" data-r><b data-count="9">9</b><h3>Huileries & agro-alimentaire</h3><p>références en Côte d’Ivoire</p></a><a class="tile" href="ref.html#caoutchouc" data-r><b data-count="6">6</b><h3>Sociétés de caoutchouc</h3><p>références en Côte d’Ivoire</p></a><a class="tile" href="ref.html#autres" data-r><b data-count="11">11</b><h3>Autres industries</h3><p>références en Côte d’Ivoire</p></a>
+    </div>
+    <p data-r style="margin-top:22px;color:var(--muted)">Et à l’international : SOGUIPAH (Guinée) · SN-SOSUCO (Burkina Faso) · CODA-SA (Bénin) · NIOTO (Bénin).</p>
+  </div>
+</section>
+
+<section class="sec sec-alt" aria-labelledby="t-poles">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Nos trois métiers</p><h2 class="h2" id="t-poles" data-split>Une usine, trois <span class="nb">savoir-faire</span></h2></div>
+    <div class="poles">
+      <div><a class="pole" href="fonderie.html" data-i="0" data-r><span class="n">01</span><div><h3>Fonderie</h3><p>Fabrication de pièces moulées par fusion : fonte, bronze, aluminium, acier.</p></div><span class="go"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="pole" href="chaudron.html" data-i="1" data-r><span class="n">02</span><div><h3>Chaudronnerie</h3><p>Fabrication de pièces et assemblages métalliques mécano-soudés.</p></div><span class="go"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="pole" href="atelier.html" data-i="2" data-r><span class="n">03</span><div><h3>Mécanique générale</h3><p>Usinage et rectification de pièces mécaniques sur dessin ou modèle.</p></div><span class="go"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+      <div class="preview" aria-hidden="true"><img src="images/fonderi.jpg" width="200" height="185" alt="" loading="lazy" decoding="async"><img src="images/edith1.jpg" width="239" height="179" alt="" loading="lazy" decoding="async"><img src="images/atelier.jpg" width="200" height="211" alt="" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<section class="hs" id="activites" aria-labelledby="t-acts">
+  <div class="hs-pin">
+    <div class="wrap" style="width:100%"><div class="sec-head" style="margin-bottom:0"><p class="eyebrow">Ce que nous fabriquons</p><h2 class="h2" id="t-acts" data-split>Sept domaines, une même exigence</h2></div></div>
+    <div class="hs-track">
+      <a class="acard" href="atelier.html"><div class="ph"><img src="images/atelier.jpg" width="200" height="211" alt="Atelier d’usinage" loading="lazy" decoding="async"></div><div class="bd"><span class="k">01 / 07</span><h3>Atelier d’usinage</h3><p>Pignons, axes, coussinets, crémaillères, roues dentées : pièces mécaniques sur dessin ou modèle.</p><span class="more">Découvrir <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a><a class="acard" href="chaudiere.html"><div class="ph"><img src="images/edith7.jpg" width="239" height="179" alt="Chaudières" loading="lazy" decoding="async"></div><div class="bd"><span class="k">02 / 07</span><h3>Chaudières</h3><p>Grilles, foyers, cendriers, tuyères et pièces de maintenance pour installations de chauffe.</p><span class="more">Découvrir <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a><a class="acard" href="chaudron.html"><div class="ph"><img src="images/edith1.jpg" width="239" height="179" alt="Chaudronnerie" loading="lazy" decoding="async"></div><div class="bd"><span class="k">03 / 07</span><h3>Chaudronnerie</h3><p>Turbines en mécano-soudé, treuils, carters rotatifs et ensembles métalliques assemblés.</p><span class="more">Découvrir <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a><a class="acard" href="fonderie.html"><div class="ph"><img src="images/fonderi.jpg" width="200" height="185" alt="Fonderie" loading="lazy" decoding="async"></div><div class="bd"><span class="k">04 / 07</span><h3>Fonderie</h3><p>Grilles et pièces de moulage en fonte, bronze, aluminium, acier et autres métaux.</p><span class="more">Découvrir <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a><a class="acard" href="pompe.html"><div class="ph"><img src="images/pompe.jpg" width="544" height="488" alt="Pompes" loading="lazy" decoding="async"></div><div class="bd"><span class="k">05 / 07</span><h3>Pompes</h3><p>Corps, impulseurs, turbines, diffuseurs, arbres, bagues et presse-étoupe.</p><span class="more">Découvrir <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a><a class="acard" href="presse.html"><div class="ph"><img src="images/presse.jpg" width="553" height="602" alt="Presses" loading="lazy" decoding="async"></div><div class="bd"><span class="k">06 / 07</span><h3>Presses</h3><p>Vis d’alimentation, vis de pression P9, cames, roues et vis sans fin, boîtiers de roulement.</p><span class="more">Découvrir <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a><a class="acard" href="wagon.html"><div class="ph"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="8" rx="1"/><circle cx="7.5" cy="18.5" r="1.5"/><circle cx="16.5" cy="18.5" r="1.5"/></svg></div><div class="bd"><span class="k">07 / 07</span><h3>Wagonnets</h3><p>Roues, paliers, bagues, arbres et pièces de rechange pour wagonnets industriels.</p><span class="more">Découvrir <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>
+      <a class="acard cta" href="contact.html#devis"><h3>Un besoin sur mesure ?</h3><p>Dessin, modèle ou pièce à remplacer : nous vous répondons avec une proposition.</p><span class="more">Demander un devis <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+    <div class="hs-bar" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<section class="sec sec-dark" aria-labelledby="t-why">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Pourquoi WAF-METAL</p><h2 class="h2" id="t-why" data-split>Moins de risques, plus de disponibilité</h2></div>
+    <div class="why" data-r>
+      <div><span class="ic-sq"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 14-14 4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg></span><h3>Sur dessin ou modèle</h3><p>Toute pièce mécanique en fonte, bronze, aluminium ou acier, fabriquée d’après votre dessin ou votre modèle.</p></div>
+      <div><span class="ic-sq"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg></span><h3>Un ingénieur-conseil</h3><p>À votre écoute pour vous guider vers des pièces de qualité, mieux adaptées à vos contraintes d’utilisation.</p></div>
+      <div><span class="ic-sq"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg></span><h3>Équipe technique mobile</h3><p>Maintenance industrielle sur site (chaudières, pompes, réducteurs…) dans les normes de sécurité et de qualité en vigueur.</p></div>
+      <div><span class="ic-sq"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><h3>Délais et prix tenus</h3><p>Un respect rigoureux des délais de livraison et un excellent rapport qualité/prix : c’est ce qui fait la satisfaction de nos clients.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="t-process">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Comment ça marche</p><h2 class="h2" id="t-process" data-split>De votre besoin à la livraison</h2></div>
+    <div class="steps">
+      <span class="line" aria-hidden="true"></span>
+      <div class="step" data-r><h3>Votre besoin</h3><p>Un dessin, un modèle, une pièce usée ou une panne : vous nous contactez.</p></div>
+      <div class="step" data-r><h3>Le conseil</h3><p>Notre ingénieur-conseil étudie votre demande et vous propose la solution adaptée.</p></div>
+      <div class="step" data-r><h3>La fabrication</h3><p>Fonderie, chaudronnerie ou usinage : la pièce est réalisée dans notre usine de Yopougon, ou l’équipe intervient sur site.</p></div>
+      <div class="step" data-r><h3>La livraison</h3><p>Livraison dans les délais convenus, avec un rapport qualité/prix irréprochable.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-dark" style="padding-block:clamp(40px,6vw,80px);overflow:hidden" aria-label="Matériaux travaillés">
+  <div class="mq mq-big" aria-hidden="true"><div class="mq-track"><div class="mq-group"><span>Fonte</span><span class="dot">●</span><span>Bronze</span><span class="dot">●</span><span>Aluminium</span><span class="dot">●</span><span>Acier</span><span class="dot">●</span></div><div class="mq-group"><span>Fonte</span><span class="dot">●</span><span>Bronze</span><span class="dot">●</span><span>Aluminium</span><span class="dot">●</span><span>Acier</span><span class="dot">●</span></div></div></div>
+</section>
+
+<section class="sec" aria-labelledby="t-real">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Réalisations</p><h2 class="h2" id="t-real" data-split>Des pièces sorties de nos ateliers</h2></div>
+    <div class="shots">
+      <figure class="shot" data-r><div class="ph"><img src="images/edith7.jpg" width="239" height="179" alt="Grille de chaudière à pales" loading="lazy" decoding="async"></div><figcaption>Grille de chaudière à pales</figcaption></figure><figure class="shot" data-r><div class="ph"><img src="images/edith10.jpg" width="239" height="179" alt="Barreau intermédiaire grille 22x22" loading="lazy" decoding="async"></div><figcaption>Barreau intermédiaire grille 22x22</figcaption></figure><figure class="shot" data-r><div class="ph"><img src="images/edith14.jpg" width="239" height="179" alt="Tuyère arrière" loading="lazy" decoding="async"></div><figcaption>Tuyère arrière</figcaption></figure><figure class="shot" data-r><div class="ph"><img src="images/edith1.jpg" width="239" height="179" alt="Turbine en mécano soudé" loading="lazy" decoding="async"></div><figcaption>Turbine en mécano soudé</figcaption></figure><figure class="shot" data-r><div class="ph"><img src="images/edith5.jpg" width="239" height="179" alt="Treuil" loading="lazy" decoding="async"></div><figcaption>Treuil</figcaption></figure><figure class="shot" data-r><div class="ph"><img src="images/edith4.jpg" width="239" height="179" alt="Roue creuse de réducteur en bronze" loading="lazy" decoding="async"></div><figcaption>Roue creuse de réducteur en bronze</figcaption></figure><figure class="shot" data-r><div class="ph"><img src="images/edith16.jpg" width="239" height="179" alt="Four rotatif" loading="lazy" decoding="async"></div><figcaption>Four rotatif</figcaption></figure><figure class="shot" data-r><div class="ph"><img src="images/edith2.jpg" width="239" height="179" alt="Vis d’entraînement" loading="lazy" decoding="async"></div><figcaption>Vis d’entraînement</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt" style="padding-block:clamp(48px,6vw,80px)" aria-label="Quelques références">
+  <div class="wrap"><p class="eyebrow">Quelques références</p></div>
+  <div class="mq" aria-hidden="true"><div class="mq-track"><div class="mq-group"><span class="chip">SIPEFCI</span><span class="chip">PHCI</span><span class="chip">UNILEVER</span><span class="chip">CEMOI</span><span class="chip">CARGILL COCOA</span><span class="chip">CONDICAF</span><span class="chip">ADAM AFRIQUE</span><span class="chip">PALMAFRIQUE</span><span class="chip">IDH</span><span class="chip">INPROBOIS</span><span class="chip">CIB</span><span class="chip">SCAF</span><span class="chip">SITBAI</span><span class="chip">STBO</span><span class="chip">NSBF</span><span class="chip">GIBT</span><span class="chip">SDMB</span><span class="chip">TRABEX</span><span class="chip">TRANCHIVOIRE</span><span class="chip">THANRY</span><span class="chip">IFEX-CI</span><span class="chip">SAPH</span><span class="chip">CHC</span><span class="chip">SOGB</span><span class="chip">TRCI</span><span class="chip">HEVETEC</span><span class="chip">CC PAKIDIE</span><span class="chip">FILTISAC</span><span class="chip">SOTRA</span><span class="chip">UNIWAX</span><span class="chip">SIR</span><span class="chip">AFRIBACHE</span><span class="chip">IVOIRE COTON</span><span class="chip">SIVEM</span><span class="chip">MIPA</span><span class="chip">FRATERNITE MATIN</span><span class="chip">SITAB</span><span class="chip">BATIM-CI</span><span class="chip">SOGUIPAH</span><span class="chip">SN-SOSUCO</span><span class="chip">CODA-SA</span><span class="chip">NIOTO</span></div><div class="mq-group"><span class="chip">SIPEFCI</span><span class="chip">PHCI</span><span class="chip">UNILEVER</span><span class="chip">CEMOI</span><span class="chip">CARGILL COCOA</span><span class="chip">CONDICAF</span><span class="chip">ADAM AFRIQUE</span><span class="chip">PALMAFRIQUE</span><span class="chip">IDH</span><span class="chip">INPROBOIS</span><span class="chip">CIB</span><span class="chip">SCAF</span><span class="chip">SITBAI</span><span class="chip">STBO</span><span class="chip">NSBF</span><span class="chip">GIBT</span><span class="chip">SDMB</span><span class="chip">TRABEX</span><span class="chip">TRANCHIVOIRE</span><span class="chip">THANRY</span><span class="chip">IFEX-CI</span><span class="chip">SAPH</span><span class="chip">CHC</span><span class="chip">SOGB</span><span class="chip">TRCI</span><span class="chip">HEVETEC</span><span class="chip">CC PAKIDIE</span><span class="chip">FILTISAC</span><span class="chip">SOTRA</span><span class="chip">UNIWAX</span><span class="chip">SIR</span><span class="chip">AFRIBACHE</span><span class="chip">IVOIRE COTON</span><span class="chip">SIVEM</span><span class="chip">MIPA</span><span class="chip">FRATERNITE MATIN</span><span class="chip">SITAB</span><span class="chip">BATIM-CI</span><span class="chip">SOGUIPAH</span><span class="chip">SN-SOSUCO</span><span class="chip">CODA-SA</span><span class="chip">NIOTO</span></div></div></div>
+  <div class="wrap" style="margin-top:30px"><a class="btn btn-line" href="ref.html">Toutes nos références <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</section>
+
+<section class="sec sec-dark cta">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center">Devis rapide</p>
+    <h2 class="h2" data-split>Un projet ? Une panne ? Parlons-en.</h2>
+    <p class="lead" data-r>Envoyez-nous votre dessin, votre modèle ou la pièce à remplacer. Notre ingénieur-conseil vous répond avec une proposition adaptée.</p>
+    <div class="hero-actions" data-r>
+      <a class="btn btn-fire" href="contact.html#devis">Demander un devis <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="tel:+22523520310"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (225) 23 52 03 10</a>
+    </div>
+    <div class="cta-lines" data-r><a href="mailto:wafmetal@aisgroupafrica.com">wafmetal@aisgroupafrica.com</a><span>Zone industrielle de Yopougon · Abidjan</span></div>
+  </div>
+</section>
+</main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div><a href="index.html" class="logo-card" style="display:inline-flex" aria-label="WAF-METAL"><img src="images/logo.png" width="436" height="173" alt="WAF-METAL" style="height:42px;width:auto" loading="lazy"></a>
+        <p>Fonderie, chaudronnerie et mécanique générale. Pièces industrielles sur mesure, depuis la zone industrielle de Yopougon, à Abidjan.</p></div>
+      <div><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="presentation.html">Présentation</a></li><li><a href="ref.html">Nos références</a></li><li><a href="contact.html#devis">Demander un devis</a></li></ul></div>
+      <div><h4>Activités</h4><ul><li><a href="atelier.html">Atelier d’usinage</a></li><li><a href="chaudiere.html">Chaudières</a></li><li><a href="chaudron.html">Chaudronnerie</a></li><li><a href="fonderie.html">Fonderie</a></li><li><a href="pompe.html">Pompes</a></li><li><a href="presse.html">Presses</a></li><li><a href="wagon.html">Wagonnets</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>Zone industrielle de Yopougon<br>26 BP 1404 Abidjan 26</li><li><a href="tel:+22523520310">(225) 23 52 03 10</a></li><li><a href="mailto:wafmetal@aisgroupafrica.com">wafmetal@aisgroupafrica.com</a></li></ul></div>
+    </div>
+    <div class="ftr-bot"><span>© 2026 WAF-METAL — West Africa Foundry and Metallurgy</span><span>Abidjan, Côte d’Ivoire</span></div>
   </div>
 </footer>
-
-<button class="to-top" type="button" aria-label="Retour en haut">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-</button>
-
-<script src="assets/js/main.js"></script>
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
