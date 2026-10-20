@@ -254,7 +254,7 @@ page({
   <div class="hs-pin">
     <div class="wrap" style="width:100%"><div class="sec-head" style="margin-bottom:0"><p class="eyebrow">Ce que nous fabriquons</p><h2 class="h2" id="t-acts" data-split>Sept domaines, une même exigence</h2></div></div>
     <div class="hs-track">
-      ${ACTS.map((x, i) => `<a class="acard" href="${x.file}"><div class="ph">${x.thumb ? img(x.thumb, x.nom) : ic(x.icon)}</div><div class="bd"><span class="k">0${i + 1} / 07</span><h3>${x.nom}</h3><p>${x.court}</p><span class="more">Découvrir ${arrow}</span></div></a>`).join('')}
+      ${ACTS.map((x, i) => `<a class="acard" href="${x.file}"><div class="ph">${x.thumb ? img(x.thumb, x.nom).replace('loading="lazy"', 'loading="eager"') : ic(x.icon)}</div><div class="bd"><span class="k">0${i + 1} / 07</span><h3>${x.nom}</h3><p>${x.court}</p><span class="more">Découvrir ${arrow}</span></div></a>`).join('')}
       <a class="acard cta" href="contact.html#devis"><h3>Un besoin sur mesure ?</h3><p>Dessin, modèle ou pièce à remplacer : nous vous répondons avec une proposition.</p><span class="more">Demander un devis ${arrow}</span></a>
     </div>
     <div class="hs-bar" aria-hidden="true"><i></i></div>

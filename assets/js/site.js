@@ -91,7 +91,9 @@
       gsap.from(split(el), { yPercent: 118, duration: 1, stagger: .06, ease: 'power4.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
     });
     /* generic fade-ups, staggered per batch */
-    ScrollTrigger.batch('[data-r]', { start: 'top 90%', once: true, onEnter: (b) => gsap.to(b, { opacity: 1, y: 0, duration: .9, stagger: .1, ease: 'power3.out', overwrite: true }) });
+    ScrollTrigger.batch('[data-r]', { start: 'top 90%', once: true, onEnter: (b) => gsap.to(b, { opacity: 1, y: 0, duration: .9, stagger: .1, ease: 'power3.out', overwrite: true,
+      // hand the element back to CSS afterwards, otherwise GSAP's inline transform blocks the :hover lift
+      onComplete: () => b.forEach((e) => { e.removeAttribute('data-r'); gsap.set(e, { clearProps: 'opacity,transform' }); }) }) });
 
     /* counters */
     $$('[data-count]').forEach((el) => {
@@ -118,4 +120,5 @@
     });
   });
   addEventListener('load', () => ScrollTrigger.refresh());
+  if (d.fonts) d.fonts.ready.then(() => ScrollTrigger.refresh()); // web fonts change text heights: recompute pin/scroll positions
 })();
